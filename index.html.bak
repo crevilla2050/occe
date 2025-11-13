@@ -16,35 +16,35 @@
     <!-- bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/bootstrap.min-themed.css"
+      href="assets/css/bootstrap.min.css"
       type="text/css"
       media="all"
     />
     <!-- carousel CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/owl.carousel.min-themed.css"
+      href="assets/css/owl.carousel.min.css"
       type="text/css"
       media="all"
     />
     <!-- nivo-slider CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/nivo-slider-themed.css"
+      href="assets/css/nivo-slider.css"
       type="text/css"
       media="all"
     />
     <!-- animate CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/animate-themed.css"
+      href="assets/css/animate.css"
       type="text/css"
       media="all"
     />
     <!-- animated-text CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/animated-text-themed.css"
+      href="assets/css/animated-text.css"
       type="text/css"
       media="all"
     />
@@ -52,35 +52,35 @@
     <link
       type="text/css"
       rel="stylesheet"
-      href="assets/fonts/font-awesome/css/font-awesome.min-themed.css"
+      href="assets/fonts/font-awesome/css/font-awesome.min.css"
     />
     <!-- font-flaticon CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/flaticon-themed.css"
+      href="assets/css/flaticon.css"
       type="text/css"
       media="all"
     />
     <!-- theme-default CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/theme-default-themed.css"
+      href="assets/css/theme-default.css"
       type="text/css"
       media="all"
     />
     <!-- meanmenu CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/meanmenu.min-themed.css"
+      href="assets/css/meanmenu.min.css"
       type="text/css"
       media="all"
     />
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="style-themed.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <!-- transitions CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/owl.transitions-themed.css"
+      href="assets/css/owl.transitions.css"
       type="text/css"
       media="all"
     />
@@ -94,14 +94,14 @@
     <!-- widget CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/widget-themed.css"
+      href="assets/css/widget.css"
       type="text/css"
       media="all"
     />
     <!-- responsive CSS -->
     <link
       rel="stylesheet"
-      href="assets/css/responsive-themed.css"
+      href="assets/css/responsive.css"
       type="text/css"
       media="all"
     />
@@ -114,9 +114,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style-themed.css">
-    <link rel="stylesheet" href="assets/css/theme-themed.css">
-</head>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">	
+  </head>
   <body>
     <!-- Loder Start-->
     <div class="loader-wrapper">
@@ -357,137 +357,168 @@
 
 
     <!--==================================================-->
-<!-- Start Techno Blog Area -->
-<!--==================================================-->
-<div class="blog_area bg_color2 pt-85 pb-65">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9">
-        <div class="section_title text_left mb-60 mt-3">
-          <div class="section_sub_title uppercase mb-3">
-            <h6>NUESTROS RECINTOS</h6>
+    <!----- Start Techno Blog Area ----->
+    <!--==================================================-->
+    <div class="blog_area bg_color2 pt-85 pb-65">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="section_title text_left mb-60 mt-3">
+              <div class="section_sub_title uppercase mb-3">
+                <h6>NUESTROS RECINTOS</h6>
+              </div>
+              <div class="section_main_title">
+                <h1>Tenemos varias</h1>
+                <h1>opciones para tu evento</h1>
+              </div>
+              <div class="em_bar">
+                <div class="em_bar_bg"></div>
+              </div>
+            </div>
           </div>
-          <div class="section_main_title">
-            <h1>Tenemos varias</h1>
-            <h1>opciones para tu evento</h1>
-          </div>
-          <div class="em_bar">
-            <div class="em_bar_bg"></div>
+          <div class="col-lg-3">
+            <div class="section_button mt-50">
+              <div class="button two">
+                <a href="">Ve todos</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="section_button mt-50">
-          <div class="button two">
-            <a href="">Ve todos</a>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="single_blog text-center mb-4 wow flipInY"
+              data-wow-delay="0ms"
+              data-wow-duration="2500ms">
+              <div class="single_blog_thumb">
+                <a href="centroconvenciones.html"
+                  ><img src="assets/images/new/wt1.png" alt=""/></a>
+              </div>
+              <div class="single_blog_date">
+                <div class="single_blog_date_inner">
+                  <h3>+2 k</h3>
+                  <span>mts2</span>
+                  <span class="years">y completamente cubierto</span>
+                </div>
+              </div>
+              <div class="single_blog_content pt-4 pl-4 pr-4">
+                <div class="techno_blog_meta">
+                  <a href="#">OCCE </a>
+                  <span class="meta-date pl-3">Centro de convenciones</span>
+                </div>
+                <div class="blog_page_title pb-1">
+                  <h3>
+                    <a href="centroconvenciones.html"
+                      >Centro Cultural y de Convenciones de Oaxaca</a
+                    >
+                  </h3>
+                </div>
+                <div class="blog_description">
+                  <p>
+                    Diseñado por el arquitecto Ignacio Mendaro Corsini, el CCCO es un majestuoso y multifuncional espacio, único en el país, que conjuga historia, cultura, recreación, negocios y esparcimiento además de contar con espacios al aire libre únicos en el país.
+                  </p>
+                </div>
+                <div class="blog_page_button style_two pb-5">
+                  <a href="centroconvenciones.html"
+                    >Read More <i class="fa fa-long-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="single_blog text-center mb-4 wow flipInY"
+              data-wow-delay="0ms"
+              data-wow-duration="2500ms"
+            >
+              <div class="single_blog_thumb">
+                <a href="blog-details.html"
+                  ><img src="assets/images/new/wt2.png" alt=""
+                /></a>
+              </div>
+              <div class="single_blog_date color2">
+                <div class="single_blog_date_inner">
+                  <h3>+11 k</h3>
+                  <span>espectadores </span>
+                  <span class="years">para conciertos</span>
+                </div>
+              </div>
+              <div class="single_blog_content pt-4 pl-4 pr-4">
+                <div class="techno_blog_meta">
+                  <a href="#">OCCE </a>
+                  <span class="meta-date pl-3">Auditorio Guelaguetza</span>
+                </div>
+                <div class="blog_page_title pb-1">
+                  <h3>
+                    <a href="blog-details.html"
+                      >Auditorio Guelaguetza</a
+                    >
+                  </h3>
+                </div>
+                <div class="blog_description">
+                  <p>
+                    Situado en el Cerro del Fortín de Oaxaca de Juárez, es el principal recinto de espectáculos del estado y uno de los más destacados de México.
+							
+					Cuenta con graderías dispuestas en tres cuartas partes del escenario, divididas en cuatro secciones que albergan a más de 11,000 espectadores.
+
+                  </p>
+                </div>
+                <div class="blog_page_button style_two pb-5">
+                  <a href="blog-details.html"
+                    >Read More <i class="fa fa-long-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="single_blog text-center mb-4 wow flipInY"
+              data-wow-delay="0ms"
+              data-wow-duration="2500ms"
+            >
+              <div class="single_blog_thumb">
+                <a href="blog-details.html"
+                  ><img src="assets/images/new/wt3.png" alt=""
+                /></a>
+              </div>
+              <div class="single_blog_date color3">
+                <div class="single_blog_date_inner">
+                  <h3>+3</h3>
+                  <span>espacios</span>
+                  <span class="years">coloniales y al aire libre</span>
+                </div>
+              </div>
+              <div class="single_blog_content pt-4 pl-4 pr-4">
+                <div class="techno_blog_meta">
+                  <a href="#">OCCE </a>
+                  <span class="meta-date pl-3">Jardín etnobotánico</span>
+                </div>
+                <div class="blog_page_title pb-1">
+                  <h3>
+                    <a href="blog-details.html"
+                      >Jardín Etnobotánico</a
+                    >
+                  </h3>
+                </div>
+                <div class="blog_description">
+                  <p>
+                    Es un mágico espacio lleno de equilibrio y belleza natural, ubicado en el corazón de la capital oaxaqueña, se ha convertido en el lugar preferido por las novias de México, ideal para celebrar bodas y eventos sociales culturales, donde cada año se realizan más de 45 eventos.
+                  </p>
+                </div>
+                <div class="blog_page_button style_two pb-5">
+                  <a href="blog-details.html"
+                    >Read More <i class="fa fa-long-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  </div>
       </div>
     </div>
-
-    <div class="row">
-      <!-- CARD 1 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="single_blog text-center mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
-          <div class="single_blog_thumb">
-            <a href="centroconvenciones.html"><img src="assets/images/new/wt1.png" alt=""/></a>
-          </div>
-          <div class="single_blog_date color1">
-						<div class="single_blog_date_inner">
-							<h3>+2 k</h3>
-							<span>mts2</span>
-							<span class="years">y completamente cubierto</span>
-						</div>
-					</div>
-          <div class="single_blog_content pt-4 pl-4 pr-4">
-            <div class="techno_blog_meta">
-              <a href="#">OCCE </a>
-              <span class="meta-date pl-3">Centro de convenciones</span>
-            </div>
-            <div class="blog_page_title pb-1">
-              <h3><a href="centroconvenciones.html">Centro Cultural y de Convenciones de Oaxaca</a></h3>
-            </div>
-            <div class="blog_description">
-              <p>
-                Diseñado por el arquitecto Ignacio Mendaro Corsini, el CCCO es un majestuoso y multifuncional espacio, único en el país, que conjuga historia, cultura, recreación, negocios y esparcimiento además de contar con espacios al aire libre únicos en el país.
-              </p>
-            </div>
-            <div class="blog_page_button style_two pb-5">
-              <a href="centroconvenciones.html">Más Información<i class="fa fa-long-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="single_blog text-center mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
-          <div class="single_blog_thumb">
-            <a href="blog-details.html"><img src="assets/images/new/wt2.png" alt=""/></a>
-          </div>
-          <div class="single_blog_date color5">
-						<div class="single_blog_date_inner">
-							<h3>+11 k</h3>
-							<span>espectadores </span>
-							<span class="years">para conciertos</span>
-						</div>
-					</div>
-          <div class="single_blog_content pt-4 pl-4 pr-4">
-            <div class="techno_blog_meta">
-              <a href="#">OCCE </a>
-              <span class="meta-date pl-3">Auditorio Guelaguetza</span>
-            </div>
-            <div class="blog_page_title pb-1">
-              <h3><a href="blog-details.html">Auditorio Guelaguetza</a></h3>
-            </div>
-            <div class="blog_description">
-              <p>
-                Situado en el Cerro del Fortín de Oaxaca de Juárez, es el principal recinto de espectáculos del estado y uno de los más destacados de México. Cuenta con graderías dispuestas en tres cuartas partes del escenario, divididas en cuatro secciones que albergan a más de 11,000 espectadores.
-              </p>
-            </div>
-            <div class="blog_page_button style_two pb-5">
-              <a href="blog-details.html">Más Información<i class="fa fa-long-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="single_blog text-center mb-4 wow flipInY" data-wow-delay="0ms" data-wow-duration="2500ms">
-          <div class="single_blog_thumb">
-            <a href="blog-details.html"><img src="assets/images/new/wt3.png" alt=""/></a>
-          </div>
-          <div class="single_blog_date color3">
-						<div class="single_blog_date_inner">
-							<h3>+3</h3>
-							<span>espacios</span>
-							<span class="years">coloniales y al aire libre</span>
-						</div>
-					</div>
-          <div class="single_blog_content pt-4 pl-4 pr-4">
-            <div class="techno_blog_meta">
-              <a href="#">OCCE </a>
-              <span class="meta-date pl-3">Jardín Etnobotánico</span>
-            </div>
-            <div class="blog_page_title pb-1">
-              <h3><a href="blog-details.html">Jardín Etnobotánico</a></h3>
-            </div>
-            <div class="blog_description">
-              <p>
-                Es un mágico espacio lleno de equilibrio y belleza natural, ubicado en el corazón de la capital oaxaqueña. Ideal para bodas y eventos sociales y culturales, donde cada año se realizan más de 45 eventos.
-              </p>
-            </div>
-            <div class="blog_page_button style_two pb-5">
-              <a href="blog-details.html">Más Información<i class="fa fa-long-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
     <!--==================================================-->
     <!----- End Techno Blog Area ----->
     <!--==================================================-->
@@ -771,7 +802,7 @@
                   Oaxaca cuenta con 568 km de litoral en el Océano Pacífico con destinos fantásticos como: Puerto escondido, Huatulco, Zipolite, Mazunte y más.
                 </p>
                 <a href="#"
-                  >Más Información
+                  >Read More
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i
                 ></a>
               </div>
@@ -790,7 +821,7 @@
                   Espacios al aire libre como pocos en el páis, desde el auditorio Guelaguetza, hasta jardines con botánica increible.
                 </p>
                 <a href="#"
-                  >Más Información
+                  >Read More
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i
                 ></a>
               </div>

@@ -1,0 +1,726 @@
+/* =========================================================
+   Oaxaca Convention Center - Color Theme
+   Bootstrap v4.4.1 Override
+   Author: ChatGPT
+   ========================================================= */
+
+/* ---------- Color Variables ---------- */
+:root {
+  --color-primary: #99254f;     /* Main deep pink/red tone */
+  --color-secondary: #a8865e;   /* Warm beige tone */
+  --color-accent1: #a1254a;     /* Accent red variant */
+  --color-accent2: #8ab955;     /* Olive green accent */
+  --color-accent3: #fabd01;     /* Bright gold accent */
+  --color-accent4: #91428a;     /* Violet accent */
+  --color-accent5: #3ea8a0;     /* Teal accent */
+  --color-light: #ffffff;
+  --color-dark: #222222;
+  --color-muted: #f5f5f5;
+}
+
+/* ---------- General Base ---------- */
+body {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+/* ---------- Links ---------- */
+body a {
+  color: var(--color-primary);
+  transition: 0.3s;
+}
+body a:hover, 
+body a:focus {
+  color: var(--color-accent4);
+}
+
+/* ---------- Navbar ---------- */
+body .navbar {
+  background-color: var(--color-primary) !important;
+  border-bottom: 2px solid var(--color-secondary);
+}
+body .navbar-brand img {
+  max-height: 60px;
+}
+body .navbar-nav .nav-link {
+  color: var(--color-light) !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+body .navbar-nav .nav-link:hover,
+body .navbar-nav .nav-item.active .nav-link {
+  color: var(--color-accent3) !important;
+}
+
+/* ---------- Buttons ---------- */
+body .btn-primary,
+body .btn.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+}
+body .btn-primary:hover,
+body .btn.btn-primary:hover {
+  background-color: var(--color-accent1) !important;
+  border-color: var(--color-accent1) !important;
+}
+
+body .btn-secondary,
+body .btn.btn-secondary {
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+  color: var(--color-light) !important;
+}
+body .btn-secondary:hover {
+  background-color: var(--color-accent4) !important;
+  border-color: var(--color-accent4) !important;
+}
+
+/* Accent buttons */
+body .btn-success { background-color: var(--color-accent2) !important; border-color: var(--color-accent2) !important; }
+body .btn-warning { background-color: var(--color-accent3) !important; border-color: var(--color-accent3) !important; }
+body .btn-info { background-color: var(--color-accent5) !important; border-color: var(--color-accent5) !important; }
+body .btn-danger { background-color: var(--color-accent1) !important; border-color: var(--color-accent1) !important; }
+
+/* ---------- Headings ---------- */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ---------- Sections ---------- */
+body section {
+  padding: 60px 0;
+}
+body section.alt-section {
+  background-color: var(--color-muted);
+}
+
+/* ---------- Cards ---------- */
+body .card {
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-light);
+}
+body .card-header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+body .card-body {
+  color: var(--color-dark);
+}
+
+/* ---------- Footer ---------- */
+body footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+body footer a {
+  color: var(--color-accent3);
+}
+body footer a:hover {
+  color: var(--color-light);
+}
+
+/* ---------- Background Utilities ---------- */
+body .bg-primary { background-color: var(--color-primary) !important; color: var(--color-light) !important; }
+body .bg-secondary { background-color: var(--color-secondary) !important; color: var(--color-light) !important; }
+body .bg-success { background-color: var(--color-accent2) !important; color: var(--color-light) !important; }
+body .bg-warning { background-color: var(--color-accent3) !important; color: var(--color-dark) !important; }
+body .bg-info { background-color: var(--color-accent5) !important; color: var(--color-light) !important; }
+body .bg-danger { background-color: var(--color-accent1) !important; color: var(--color-light) !important; }
+
+/* ---------- Text Utilities ---------- */
+body .text-primary { color: var(--color-primary) !important; }
+body .text-secondary { color: var(--color-secondary) !important; }
+body .text-success { color: var(--color-accent2) !important; }
+body .text-warning { color: var(--color-accent3) !important; }
+body .text-info { color: var(--color-accent5) !important; }
+body .text-danger { color: var(--color-accent1) !important; }
+body .text-light { color: var(--color-light) !important; }
+body .text-dark { color: var(--color-dark) !important; }
+
+/* ---------- Forms ---------- */
+body input[type="text"],
+body input[type="email"],
+body textarea,
+body select {
+  border: 1px solid var(--color-secondary);
+}
+body input:focus,
+body textarea:focus,
+body select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(153,37,79,0.25);
+}
+
+/* ---------- Highlights ---------- */
+body .highlight {
+  background-color: var(--color-accent3);
+  color: var(--color-dark);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* ---------- Hero / Overlay ---------- */
+body .hero,
+body .overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+body .hero .btn-cta {
+  background: var(--color-primary);
+  color: var(--color-light);
+}
+body .hero .btn-cta:hover {
+  background: var(--color-accent1);
+}
+
+/* ==========================================================================
+   Navbar and Sticky Header Fix
+   ========================================================================== */
+
+.navbar,
+.navbar.navbar-default,
+.navbar.navbar-dark,
+.navbar.navbar-light,
+.navbar-expand,
+.navbar-expand-lg {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.fixed-top,
+.navbar.sticky,
+.header-area.sticky,
+.header-area.fixed,
+.navbar.affix {
+  background-color: var(--color-accent1) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .nav-link,
+.navbar a,
+.header-area .main-menu ul li a {
+  color: var(--color-light) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar a:hover,
+.header-area .main-menu ul li a:hover {
+  color: var(--color-secondary) !important;
+}
+
+.navbar-brand,
+.header-area .logo a {
+  color: var(--color-light) !important;
+}
+
+/* ==========================================================================
+   Sticky Header Color Fix
+   ========================================================================== */
+
+#sticky-header {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  transition: background-color 0.4s ease, box-shadow 0.3s ease;
+}
+
+#sticky-header.sticky,
+#sticky-header.fixed,
+#sticky-header.is-sticky {
+  background-color: var(--color-primary) !important;
+  border-bottom: 2px solid var(--color-secondary);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Links inside the header menu */
+#sticky-header .menu ul li a {
+  color: var(--color-light) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#sticky-header .menu ul li a:hover,
+#sticky-header .menu ul li.active > a {
+  color: var(--color-secondary) !important;
+}
+
+/* Dropdowns */
+#sticky-header .menu ul.normal-sub {
+  background-color: var(--color-accent1) !important;
+  border: 1px solid var(--color-secondary);
+}
+#sticky-header .menu ul.normal-sub li a {
+  color: var(--color-light) !important;
+}
+#sticky-header .menu ul.normal-sub li a:hover {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-dark) !important;
+}
+
+/* Buttons & Language Icons */
+#sticky-header .donate-btn-header .dtbtn {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-dark) !important;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+#sticky-header .donate-btn-header .dtbtn:hover {
+  background-color: var(--color-accent1) !important;
+  color: var(--color-light) !important;
+}
+#sticky-header .donate-btn-header img {
+  height: 22px;
+  width: auto;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Bootstrap Blue Override
+   ========================================================================== */
+
+a,
+a:hover,
+a:focus,
+.nav-link:hover,
+.nav-link:focus,
+.dropdown-item.active,
+.dropdown-item:active,
+.page-item.active .page-link,
+.btn-link:hover,
+.btn-link:focus {
+  color: var(--color-primary-light) !important;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+}
+.btn-primary:hover {
+  background-color: var(--color-accent1) !important;
+  border-color: var(--color-accent1) !important;
+  color: var(--color-light) !important;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+  color: var(--color-dark) !important;
+}
+.btn-secondary:hover {
+  background-color: var(--color-accent1) !important;
+  border-color: var(--color-accent1) !important;
+  color: var(--color-light) !important;
+}
+
+.page-item.active .page-link {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(153, 37, 79, 0.25) !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--color-accent1) !important;
+  color: var(--color-light) !important;
+}
+/* ==========================================================================
+   Custom Button Style: .button and .button.two
+   ==========================================================================
+   Provides consistent themed styling for custom link-style buttons
+   ========================================================================== */
+
+.button a,
+.button.two a {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease;
+}
+
+/* Default button (.button) */
+.button a {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: 2px solid var(--color-primary);
+}
+
+.button a:hover {
+  background-color: var(--color-accent1);
+  color: var(--color-light);
+  border-color: var(--color-accent1);
+}
+
+/* Variant: .button.two */
+.button.two a {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: 2px solid var(--color-secondary);
+}
+
+.button.two a:hover {
+  background-color: var(--color-accent3);
+  color: var(--color-dark);
+  border-color: var(--color-accent3);
+}
+
+/* Optional: subtle shadow on hover for visual feedback */
+.button a:hover,
+.button.two a:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+/* ==========================================================================
+   Bootstrap Blue RGB Overrides — Purge Default Blue Shades
+   ========================================================================== */
+
+/* Buttons and interactive states */
+.btn:hover,
+.btn:focus,
+.btn:active,
+.show > .btn.dropdown-toggle {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+  box-shadow: none !important;
+}
+
+/* Generic hover/focus colors (Bootstrap's default var(--color-primary) or rgba variants) */
+a:hover,
+a:focus,
+button:hover,
+button:focus,
+.page-link:hover,
+.page-link:focus,
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--color-accent4) !important; /* violet accent hover */
+}
+
+/* Any hardcoded var(--color-primary) or rgba(153,37,79,0.5) elements */
+[class*="btn"],
+[class*="link"],
+[class*="page-link"],
+[class*="dropdown-item"],
+a,
+button {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Replace hardcoded Bootstrap blue RGB definitions globally */
+* {
+  /* override rgba(153,37,79,...) backgrounds or borders */
+  --bs-blue: var(--color-primary);
+  --bs-indigo: var(--color-accent4);
+  --bs-cyan: var(--color-accent5);
+}
+
+/* Ensure focus rings use your palette */
+:focus {
+  outline-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(153, 37, 79, 0.25) !important; /* matches your primary */
+}
+
+/* Pagination, alerts, badges, etc. */
+.page-item.active .page-link,
+.badge-primary,
+.alert-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+}
+
+/* Links inside buttons or custom components */
+.btn a:hover,
+.btn a:focus {
+  color: var(--color-light) !important;
+}
+/* === Fix hover blue remnants and enforce custom theme colors === */
+
+/* General link hover override */
+a:hover,
+a:focus {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+
+/* Override for Cotiza YA! and similar buttons */
+.donate-btn-header .dtbtn,
+.button a,
+.section_button .two a {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.donate-btn-header .dtbtn:hover,
+.button a:hover,
+.section_button .two a:hover {
+  background-color: var(--bs-secondary); /* Or use a slightly darker shade of primary */
+  color: #fff !important;
+}
+
+/* Ensure no rgb(13,110,253) (Bootstrap blue) leaks through */
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+/* Optional: For buttons that had weird outlines on hover */
+.btn:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+/* === PORTFOLIO HOVER FIX === */
+.single_portfolio:hover .single_portfolio_thumb::before,
+.single_portfolio_inner:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--primary-color) !important; /* your palette base */
+  opacity: 0.75; /* overlay intensity */
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+/* make sure the overlay sits behind the icons and text */
+.single_portfolio_content,
+.single_portfolio_icon,
+.single_portfolio_content_inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* optional hover effect refinement */
+.single_portfolio:hover .single_portfolio_thumb::before {
+  opacity: 0.85;
+  background: var(--secondary-color) !important; /* subtle tone shift on hover */
+}
+/* ================= Strong Portfolio / overlay overrides ================= */
+
+/* ensure the CSS variables you use exist; adjust names if needed */
+:root {
+  --theme-primary: var(--color-primary, #99254f);
+  --theme-secondary: var(--color-secondary, #a8865e);
+}
+
+/* Remove any previously applied blue overlay backgrounds (force transparent) */
+.single_portfolio .single_portfolio_thumb::before,
+.single_portfolio .single_portfolio_thumb::after,
+.single_portfolio::before,
+.single_portfolio::after,
+.single_portfolio_inner::before,
+.single_portfolio_inner::after,
+.single_portfolio_thumb .overlay,
+.single_portfolio_thumb .overlay::before,
+.single_portfolio_thumb .overlay::after {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  content: none !important;
+}
+
+/* Add our own controlled overlay so stacking is correct */
+.single_portfolio .single_portfolio_thumb {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* create overlay pseudo-element that we control */
+.single_portfolio .single_portfolio_thumb::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important; /* shorthand for top:0;right:0;bottom:0;left:0 */
+  background: var(--theme-primary) !important;
+  opacity: 0 !important;
+  transition: opacity 280ms ease, background-color 280ms ease !important;
+  z-index: 5 !important; /* sits above image but below icons/text (we'll set text/icon z-index below) */
+  pointer-events: none !important;
+}
+
+/* show overlay on hover / focus */
+.single_portfolio:hover .single_portfolio_thumb::after,
+.single_portfolio_inner:hover::after,
+.single_portfolio.admin:hover .single_portfolio_thumb::after {
+  opacity: 0.62 !important; /* tune overlay intensity */
+  background: linear-gradient(180deg, rgba(153,37,79,0.85) 0%, rgba(168,134,94,0.85) 100%) !important;
+}
+
+/* ensure icons and content remain visible above overlay */
+.single_portfolio_content,
+.single_portfolio_icon,
+.single_portfolio_content_inner,
+.single_portfolio .portfolio-icon {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* remove any filter/overlay effects on the image itself (sometimes applied) */
+.single_portfolio_thumb img,
+.single_portfolio .single_portfolio_thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-filter: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* ----- Defensive rules: override common Bootstrap/third-party blue hover states ----- */
+
+/* Buttons and links (defensive) */
+.single_portfolio .portfolio-icon a,
+.single_portfolio .portfolio-icon a:hover,
+.single_portfolio .single_portfolio_content a,
+a.portfolio-icon,
+a.portfolio-icon:hover {
+  color: #fff !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* If there's a slide-up overlay animation that uses transform + pseudo-element */
+.single_portfolio .single_portfolio_thumb::before,
+.single_portfolio .single_portfolio_thumb.slide-overlay::before,
+.single_portfolio .single_portfolio_thumb.slide-overlay::after {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+/* If any animation pseudo-element is present set it to our color */
+.single_portfolio .single_portfolio_thumb::after[style],
+.single_portfolio .single_portfolio_thumb::before[style] {
+  background: var(--theme-primary) !important;
+  opacity: 0.62 !important;
+}
+
+/* final catch-all: replace inline-blue-ish backgrounds on hover for elements inside portfolio */
+.single_portfolio *:hover {
+  --_fallback-bg: transparent !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* small nicety: make overlay appear slightly faster when hovering */
+.single_portfolio .single_portfolio_thumb::after {
+  transition-duration: 220ms !important;
+}
+/* === Unified button styling for all custom buttons === */
+
+/* --- Cotiza YA! Button --- */
+.dtbtn,
+.donate-btn-header .dtbtn {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover & focus states */
+.dtbtn:hover,
+.dtbtn:focus,
+.donate-btn-header .dtbtn:hover,
+.donate-btn-header .dtbtn:focus {
+  background-color: var(--secondary-color) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* --- "Ve todos" Button --- */
+.button.two a {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 10px 24px;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover & focus states */
+.button.two a:hover,
+.button.two a:focus {
+  background-color: var(--secondary-color) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* --- Optional: make all links inside .button containers look uniform --- */
+.button a {
+  text-decoration: none;
+}
+/* === Custom Blog Section Colors === */
+
+/* Default (first block) */
+.single_blog_date {
+  background-color: var(--primary-color, #99254f) !important;
+}
+
+/* Second block (Auditorio Guelaguetza) */
+.single_blog_date.color2 {
+  background-color: var(--secondary-color, #a8865e) !important;
+}
+
+/* Third block (Jardín Etnobotánico) */
+.single_blog_date.color3 {
+  background-color: #8ab955 !important; /* green from palette */
+}
+
+/* Optional hover effect for subtle animation */
+.single_blog_date:hover {
+  filter: brightness(1.05);
+  transition: filter 0.3s ease-in-out;
+}
+/* === Custom color variants for "Nuestros Recintos" section === */
+/* === Corrected color variants for "Nuestros Recintos" section === */
+.single_blog_date.color1 {
+  background-color: var(--color-primary) !important;   /* Main theme color */
+}
+
+.single_blog_date.color5 {
+  background-color: var(--color-accent5) !important;   /* Teal accent */
+}
+
+.single_blog_date.color3 {
+  background-color: var(--color-accent2) !important;   /* Olive green accent */
+}
+
+/* Ensure text contrast */
+.single_blog_date.color1 h3,
+.single_blog_date.color1 span,
+.single_blog_date.color5 h3,
+.single_blog_date.color5 span,
+.single_blog_date.color3 h3,
+.single_blog_date.color3 span {
+  color: var(--color-light) !important;
+}

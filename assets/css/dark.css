@@ -407,7 +407,7 @@ input[type="checkbox"].toggle-switch:checked::after {
 }
 
 .dark .video-icon a {
-  color: #0c5adb;
+  color: var(--color-primary);
 }
 
 .dark .techno-info-section {

@@ -1,0 +1,228 @@
+/* ==========================================================
+   style.color-overrides.css
+   Purpose: Apply new purple–coral palette over Bootstrap
+   ========================================================== */
+
+:root {
+  --color-primary: #99254f;       /* Deep purple */
+  --color-primary-light: #a1254a; /* Hover / highlight */
+  --color-secondary: #a8865e;     /* Coral accent */
+  --color-bg-dark: #2e2e2e;
+  --color-bg-light: #f5f5f5;
+  --color-text-light: #ffffff;
+  --color-text-dark: #333333;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+}
+
+/* -------------------- Global -------------------- */
+body, html {
+  background-color: var(--color-bg-light) !important;
+  color: var(--color-text-dark) !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary) !important;
+}
+h1 span, h2 span, h3 span {
+  color: var(--color-secondary) !important;
+}
+
+/* Links */
+a {
+  color: var(--color-primary) !important;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: var(--color-primary-light) !important;
+}
+
+/* -------------------- Navbar -------------------- */
+.navbar, .navbar-default, .navbar-light, .navbar-dark {
+  background-color: var(--color-text-light) !important;
+  border: none !important;
+}
+.navbar a, .navbar-nav .nav-link {
+  color: var(--color-text-light) !important;
+  font-weight: 500;
+}
+.navbar a:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--color-secondary) !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: var(--color-primary) !important;
+}
+.dropdown-menu a {
+  color: var(--color-text-light) !important;
+}
+.dropdown-menu a:hover {
+  background-color: var(--color-primary-light) !important;
+  color: var(--color-text-light) !important;
+}
+
+/* -------------------- Buttons -------------------- */
+.btn,
+.btn-primary,
+button,
+input[type=button],
+input[type=submit] {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-light) !important;
+  border-radius: 25px !important;
+  transition: background 0.3s ease;
+}
+
+.btn:hover,
+.btn-primary:hover,
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary-light) !important;
+  color: var(--color-text-light) !important;
+}
+
+/* Secondary / accent buttons */
+.btn-secondary {
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+  color: var(--color-text-light) !important;
+}
+.btn-secondary:hover {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary-light) !important;
+}
+
+/* Outline buttons */
+.btn-outline-primary {
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-light) !important;
+}
+
+/* -------------------- Sections / Hero -------------------- */
+.hero,
+.hero-header,
+header,
+.banner {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-light) !important;
+  position: relative;
+}
+.hero .overlay,
+.hero-header .overlay {
+  background: var(--color-overlay) !important;
+}
+.hero h1, .hero h2 {
+  color: var(--color-text-light) !important;
+}
+.hero .btn-cta {
+  background: var(--color-secondary) !important;
+}
+.hero .btn-cta:hover {
+  background: var(--color-primary-light) !important;
+}
+
+/* -------------------- Cards / Boxes -------------------- */
+.card, .feature-box, .single-element-icon-box, .pricing-card {
+  background-color: var(--color-bg-dark) !important;
+  color: var(--color-text-light) !important;
+  border: none !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.card-title, .feature-box h4, .pricing-card h4 {
+  color: var(--color-secondary) !important;
+}
+.card a, .feature-box a {
+  color: var(--color-secondary) !important;
+}
+.card a:hover, .feature-box a:hover {
+  color: var(--color-primary-light) !important;
+}
+
+/* -------------------- Headings / Sections -------------------- */
+.section-title h2, .section-title h3 {
+  color: var(--color-primary) !important;
+}
+.section-title span {
+  color: var(--color-secondary) !important;
+}
+
+/* -------------------- Testimonials / Carousels -------------------- */
+.testimonial-area,
+.owl-carousel .item {
+  background-color: var(--color-bg-dark) !important;
+  color: var(--color-text-light) !important;
+}
+.testimonial-area h4, .testimonial-area h5 {
+  color: var(--color-secondary) !important;
+}
+
+/* -------------------- Footer -------------------- */
+footer, .footer-area {
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-light) !important;
+}
+footer a, .footer a {
+  color: var(--color-secondary) !important;
+}
+footer a:hover {
+  color: var(--color-primary-light) !important;
+}
+footer h4, .footer h4 {
+  color: var(--color-text-light) !important;
+}
+.footer-bottom {
+  background-color: var(--color-primary-light) !important;
+  color: var(--color-text-light) !important;
+}
+
+/* -------------------- Forms -------------------- */
+input, textarea, select {
+  border: 1px solid var(--color-primary) !important;
+  color: var(--color-text-dark) !important;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary-light) !important;
+  box-shadow: 0 0 5px var(--color-primary-light) !important;
+}
+
+/* -------------------- Misc / Utility -------------------- */
+.text-primary { color: var(--color-primary) !important; }
+.text-secondary { color: var(--color-secondary) !important; }
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.bg-dark { background-color: var(--color-bg-dark) !important; color: var(--color-text-light) !important; }
+.bg-light { background-color: var(--color-bg-light) !important; color: var(--color-text-dark) !important; }
+
+.border-primary { border-color: var(--color-primary) !important; }
+.border-secondary { border-color: var(--color-secondary) !important; }
+
+/* Buttons and badges inside dark backgrounds */
+.bg-dark .btn, .bg-dark .badge {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-text-light) !important;
+}
+
+/* Loaders and spinners */
+.loader, #spinnerbtn {
+  background-color: var(--color-primary) !important;
+  border-top-color: var(--color-secondary) !important;
+}
+
+/* -------------------- Animations / Hover effects -------------------- */
+[data-hover], [class*="hover"], a:hover {
+  transition: all 0.3s ease;
+}
+.btn:hover, .navbar a:hover, .card:hover, .feature-box:hover {
+  filter: brightness(1.05);
+}
+
+/* End of color overrides */

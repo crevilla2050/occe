@@ -202,7 +202,7 @@
 }
 
 .fa-inverse {
-    color: #fff
+    color: var(--color-text-light)
 }
 
 .fa-glass:before {
