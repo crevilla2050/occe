@@ -224,5 +224,30 @@ input:focus, textarea:focus, select:focus {
 .btn:hover, .navbar a:hover, .card:hover, .feature-box:hover {
   filter: brightness(1.05);
 }
+/* === Force visibility of header slider background === */
+.slider2 {
+  background-image: url("assets/images/slider/slider-2-01.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove any dark or blue overlay that hides the slider background */
+.slider2::before,
+.slider_area::before,
+.landing::before {
+  background: transparent !important;
+  opacity: 0 !important;
+  content: none !important;
+}
+
+/* Ensure text is visible over bright background */
+.slider_area h1,
+.slider_area p {
+  color: #fff !important;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
 
 /* End of color overrides */

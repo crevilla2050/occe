@@ -846,6 +846,7 @@ a.cart:after {
 /*====================================================
 --<	Techno Slider Area Css -->
 ======================================================*/
+
 .slider1 {
   background-image: url(assets/images/slider/slider-1.png);
   background-size: cover;
@@ -854,7 +855,7 @@ a.cart:after {
   height: 900px;
 }
 .slider2 {
-  background-image: url(assets/images/slider/slider-2-01.png);
+  background-image: url(../images/slider/slider-2-01.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -16110,4 +16111,51 @@ div#particles .slider18 {
 footer {
   background-color: var(--secondary-color) !important;
   color: #fff !important;
+}
+/* ===== HEADER / SLIDER BACKGROUND FIX ===== */
+.slider_area.landing {
+  position: relative;
+  background: url("../images/slider/slider1.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.slider_area.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* darken overlay for contrast */
+  z-index: 2;
+}
+
+.slider_area.landing .slider_content {
+  position: relative;
+  z-index: 3;
+}
+/* ===== FOOTER FIX ===== */
+.footer-middle {
+  background-color: var(--primary-dark, #202020) !important;
+  color: #fff !important;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-middle h4,
+.footer-middle h3,
+.footer-middle .widget-title {
+  color: #fff !important;
+}
+
+.footer-middle a {
+  color: #f5f5f5 !important;
+  text-decoration: none;
+}
+
+.footer-middle a:hover {
+  color: var(--primary-color, #fba500) !important;
+}
+
+.footer-bottom {
+  background-color: #111 !important;
+  color: #ccc !important;
 }

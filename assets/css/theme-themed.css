@@ -859,3 +859,17 @@ div.footer-middle div#em-recent-post-widget {
   list-style: none;
   margin-bottom: 6px;
 }
+/* === Fix for Centro de Convenciones header background === */
+.slider_area.slider2.landing {
+  background-image: url("../images/slider/slider-2-01.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important; /* override the fixed bg */
+}
+
+.slider_area.slider2.landing::before {
+  background: transparent !important;
+  opacity: 0 !important;
+  content: none !important;
+}
