@@ -724,3 +724,138 @@ a.portfolio-icon:hover {
 .single_blog_date.color3 span {
   color: var(--color-light) !important;
 }
+/* Top Header Menu - Make text and icons white */
+.header_top_menu {
+    background-color: #333333; /* optional: dark background to enhance contrast */
+}
+
+.header_top_menu a {
+    color: #ffffff !important;      /* all links white */
+    text-decoration: none;          /* remove underline if any */
+}
+
+.header_top_menu a:hover {
+    color: #f0f0f0 !important;      /* slightly lighter on hover */
+}
+
+.header_top_menu i.fa,
+.header_top_menu i.bi {
+    color: #ffffff !important;      /* all font-awesome and bootstrap icons white */
+}
+
+.header_top_menu li {
+    list-style: none;               /* remove bullets */
+}
+/* Footer: Widget "Nuestros servicios" - make text and links white */
+.footer_area .widget.widget-nav-menu {
+    color: #ffffff !important;
+}
+
+.footer_area .widget.widget-nav-menu .widget-title {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.footer_area .widget.widget-nav-menu a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_area .widget.widget-nav-menu a:hover {
+    color: var(--primary-color, #f0b429) !important; /* use theme accent color on hover */
+}
+
+.footer_area .widget.widget-nav-menu ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+/* ================= Footer: force readable white colors for the "Nuestros servicios" / address widgets ================= */
+/* Paste this at the END of your colores.css (or the last-loaded stylesheet) */
+
+.footer-middle,
+.footer-middle .widget,
+.footer-middle .widget * {
+  color: #ffffff !important;
+}
+
+/* Widget titles (h4, h3) */
+.footer-middle .widget .widget-title,
+.footer-middle .widget h3,
+.footer-middle .widget h4 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Quick links list */
+.footer-middle .menu-quick-link-container,
+.footer-middle #menu-quick-link,
+.footer-middle #menu-quick-link li,
+.footer-middle #menu-quick-link li a {
+  color: #ffffff !important;
+}
+
+/* Make sure anchor text is white and visible */
+.footer-middle a,
+.footer-middle a:link,
+.footer-middle a:visited {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+/* Hover states: keep visible (use subtle accent if desired) */
+.footer-middle a:hover,
+.footer-middle a:focus {
+  color: #fabd01 !important; /* bright gold hover — change to another palette color if you prefer */
+  text-decoration: underline !important;
+}
+
+/* Paragraphs and small text inside widgets */
+.footer-middle .company-info-desc,
+.footer-middle .company-info-desc p,
+.footer-middle .footer-social-info p,
+.footer-middle .recent-post-text,
+.footer-middle .recent-post-text a {
+  color: #ffffff !important;
+}
+
+/* Footer icons (font-awesome / bootstrap icons) */
+.footer-middle .fa,
+.footer-middle .bi,
+.footer-middle i {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Recent post small metadata */
+.footer-middle .rcomment,
+.footer-middle .recent-post-text .rcomment {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* Ensure backgrounds don't darken text (in case an overlay adds reduced contrast) */
+.footer-middle .widget,
+.footer-middle .widget .company-info-desc,
+.footer-middle .widget .menu-quick-link-container {
+  background: transparent !important;
+}
+
+/* Defensive: override any specificity with long selectors */
+div.footer-middle div.widget.widget-nav-menu,
+div.footer-middle div.widget.widgets-company-info,
+div.footer-middle div#em-recent-post-widget {
+  color: #ffffff !important;
+}
+
+/* If responsive copy of footer uses .footer-area wrapper elsewhere, include it too */
+.footer-area .widget,
+.footer-area .widget * {
+  color: #ffffff !important;
+}
+
+/* Small spacing nicety for list items */
+.footer-middle .menu-quick-link-container ul.menu li {
+  list-style: none;
+  margin-bottom: 6px;
+}
